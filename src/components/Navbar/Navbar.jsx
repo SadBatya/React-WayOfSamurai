@@ -3,10 +3,23 @@ import classes from './Navbar.module.css'
 
 const Navbar = () => {
   return(
-    <nav className={classes.nav}>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Circle-icons-rocket.svg/1200px-Circle-icons-rocket.svg.png" alt="" />
-      <p className={classes.item}>SalamMaleykum</p>
-    </nav>
+    <div className={classes.nav}>
+      <div className={classes.item}>
+        <a href="/profile">Profile</a>
+      </div>
+      <div className={classes.item}>
+        <a href="/dialogs">Message</a>
+      </div>
+      <div className={classes.item}>
+        <a href="/news">News</a>
+      </div>
+      <div className={classes.item}>
+        <a href="/music">Music</a>
+      </div>
+      <div className={classes.item}>
+        <a href="/settings">Settings</a>
+      </div>
+    </div>
   )
 }
 
