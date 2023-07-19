@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import state from './redux/state'
+import { addPost } from './redux/state';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+addPost('SamuraiJS')
 root.render(
   <React.StrictMode>
-    <App state={state} posts={state.posts} dialogs={state.dialogs} messages={state.messages} />
+    <App state={state} addPost={addPost } />
   </React.StrictMode>
 );
 
