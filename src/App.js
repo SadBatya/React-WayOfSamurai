@@ -1,41 +1,19 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
-import Profile from './components/Profile/Profile';
-import Dialogs from './components/Dialogs/Dialogs';
-import News from './components/News/News';
-import Music from './components/Music/Music';
-import Settings from './components/Settings/Settings';
-import { addPost } from './redux/state';
+import Button from './components/Button/Button';
+import Form from './components/Form/Form'
+import Welcome from './components/FormRegistration/FormWelcome';
+import ImageSlider from './components/ImageSlider/ImageSlider'
+import SendMessageForm from './components/SendMesageForm/SendMessageForm';
 
-function App(props) {
+function App() {
   return (
-    <BrowserRouter>
-      <div className='app-wrapper'>
-        <Header name='Vladimir' age='20' />
-        <Navbar />
-        <div className='app-wrapper-content'>
-          <Routes>
-            <Route
-              exact
-              path='/dialogs/*'
-              element={<Dialogs state={props.state.messagesPage} />}
-            />
-            <Route
-              path='/profile'
-              element={
-                <Profile state={props.state.profilePage} addPost={props.addPost} />
-              }
-            />
-            <Route path='/News' element={<News />} />
-            <Route path='/Music' element={<Music />} />
-            <Route path='/Settings' element={<Settings />} />
-          </Routes>
-        </div>
-      </div>
-    </BrowserRouter>
+    <div className="App">
+      <Button />
+      <Form />
+      <ImageSlider />
+      <Welcome />
+      <SendMessageForm />
+    </div>
   );
 }
 

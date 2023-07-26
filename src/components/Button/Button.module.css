@@ -1,0 +1,17 @@
+.btn{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  background-color: black;
+  border-radius: 10px;
+  margin-top: 50px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.Toolbar{
+  background-color: gray;
+}

@@ -1,22 +1,10 @@
-.app-wrapper{
-  display: grid;
-
-  grid-template-areas: 
-  'h h'
-  'n c';
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.content{
-  grid-area: c;
-  background-color: rgb(2, 170, 2);
-}
-
-
-img{
-  width: 200px;
+.App{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
 }
